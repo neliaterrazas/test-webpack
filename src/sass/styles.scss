@@ -2,7 +2,7 @@
 $backgroundColor: lightgrey;
 
 body {
-  background-color: $backgroundColor;
+  background-image: image("../assets/images/spooky-wilderness.jpg");
 }
 
 .count-down {
@@ -77,8 +77,26 @@ p {
 }
 .media-coverage{
   display: grid;
+  column-gap: 1em;
+  grid-row-gap: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+
+  .reviews {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+  }
   .review-1 {
     grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: none;
+
 
   }
   .review-2 {
@@ -126,8 +144,27 @@ p {
 
   grid-template-areas:
     'header header header';
-    .reviews {
-      border: 1px solid white;
-    }
 
+}
+.tweets{
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  .tweet{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+.facebooks{
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  .facebook{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 }
